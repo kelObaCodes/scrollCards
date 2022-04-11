@@ -39,7 +39,7 @@
       female product out of stock by color
     </button>
   </div>
-  <div class="content">
+  <div class="content text-center">
     <table
       v-if="
         activeType === 'lessThan20' ||
@@ -67,7 +67,7 @@
       </tbody>
     </table>
 
-    <div v-if="activeType === 'commonly'">
+    <div v-if="activeType === 'commonly'" >
       <p>{{ commonlyUsedCategory }}</p>
     </div>
     <div v-if="activeType === 'avgSale'">
@@ -246,6 +246,9 @@ button {
 
 .mb-50 {
   margin-bottom: 50px;
+}
+.text-center {
+  text-align:center;
 }
 .color-div {
   display: flex;

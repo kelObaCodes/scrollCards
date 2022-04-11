@@ -50,12 +50,6 @@ export default {
     },
   },
 
-  methods: {
-    resetState() {
-   this.objectAccessed = false;
-   
-    },
-  },
   watch: {
     product: {
       handler: function() {
