@@ -152,7 +152,7 @@ export default {
     },
 
     getWomenOutOfStockByColor(arr) {
-      const groupBy = (key) => (array) =>
+      const groupProductsBy = (key) => (array) =>
         array.reduce(
           (objectsByKeyValue, obj) => ({
             ...objectsByKeyValue,
@@ -161,13 +161,13 @@ export default {
           {}
         );
 
-      const groupByColor = groupBy("color");
-      const target_copy = groupByColor(arr);
+      const groupWomenProductByColor = groupProductsBy("color");
+      const targetCopy = groupWomenProductByColor(arr);
       let arrayList = [];
-      for (let key in target_copy) {
+      for (let key in targetCopy) {
         let object = {
           color: key,
-          ...target_copy[key],
+          ...targetCopy[key],
         };
         arrayList.push(object);
       }

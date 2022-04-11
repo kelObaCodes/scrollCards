@@ -21,7 +21,7 @@
 
       </code>
     </div>
-        <button class="button-class" @click="resetState">Reset State</button>
+       
 
   </div>
 </template>
@@ -52,7 +52,8 @@ export default {
 
   methods: {
     resetState() {
-   this.objectAccessed = false
+   this.objectAccessed = false;
+   
     },
   },
   watch: {
